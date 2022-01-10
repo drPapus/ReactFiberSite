@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&family=Secular+One&display=swap'); 
+   .hero-main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 90vh;
+    margin-top:3em;
+}
+.heading-section{
+    display: flex;
+    justify-content: center   ;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    background-color: white;
+}
+.name{
+font-size: 3em;
+font-weight: bold;
+margin-left: -1em;
+margin-bottom: -0.9em;
+margin-top:-2em;
+font-family: 'Secular One', sans-serif;
+}
+.about{
+    margin-left: -4em;
+    font-weight: 600;
+    font-family: 'Hahmlet', serif;
+color: rgb(95, 94, 94);
+text-decoration: underline;
+    
+}
+
+button{
+    margin:1em;
+    padding: 1em;
+    border-radius: 1em;
+    border:0.5px solid gray;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    background-color: white;
+    transition: 1s;
+}
+button:nth-child(2){
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+}
+.buttonWrap{
+    margin-left:-5em;
+}
+
+.cursor{
+    font-size: 3rem;
+}
+@media (max-width:700px) {
+    .hero-main{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin-top: 5rem;
+    }
+  .cursor{
+      font-size: 2rem;
+      z-index: -3;
+  }
+    .box-object{
+        z-index: -1;
+    }
+    .name{
+        font-size: 1.5rem;
+        margin-left: 0.25em;
+        margin-bottom: -4em;
+    }
+    .about{
+        font-size: 0.75rem;
+        margin-left: 0.25em;
+        margin-top: -1em;
+    }
+    .buttonWrap{
+        margin-left: 2px;
+    }
+ .hero-main{
+     opacity: 1;
+ }
+}
